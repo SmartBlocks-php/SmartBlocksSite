@@ -8,7 +8,8 @@
             "name" : "LandingPage",
             "token": "LandingPage",
             "block_token": "SmartBlocksSite",
-            "entry_point": "launch_landing_page"
+            "entry_point": "launch_landing_page",
+            "menu_ignore": true
         }
     ]
 }
