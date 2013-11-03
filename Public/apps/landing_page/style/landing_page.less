@@ -1,0 +1,65 @@
+.landing_page {
+  height: 100%;
+  .header {
+    height: 50px;
+    background: rgba(255,255,255,0.5);
+    font-size: 50px;
+  }
+
+  .sections_selector {
+    width: 840px;
+    margin: auto;
+    height: 25%;
+    background: rgba(255,255,255,0.5);
+    margin-top: 10px;
+    display: block;
+    .section {
+      float: left;
+      height: ~"calc(100% - 70px)";
+      margin: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      width: 210px;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.9);
+      }
+
+      strong {
+        position: relative;
+        z-index: 2;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 100%;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 200%;
+        min-width: 100%;
+      }
+    }
+
+  }
+
+  .landing_content {
+    height: ~"calc(75% - 80px)";
+    background: rgba(255,255,255,0.5);
+    width: 840px;
+    margin: auto;
+    margin-top: 10px;
+    > div {
+      padding: 10px;
+    }
+  }
+}

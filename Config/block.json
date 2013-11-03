@@ -1,0 +1,14 @@
+{
+    "name": "SmartBlocksSite",
+    "token": "SmartBlocksSite",
+    "types": [
+    ],
+    "apps": [
+        {
+            "name" : "LandingPage",
+            "token": "LandingPage",
+            "block_token": "SmartBlocksSite",
+            "entry_point": "launch_landing_page"
+        }
+    ]
+}
