@@ -6,6 +6,10 @@ define([
 ], function ($, _, Backbone, LandingPageView) {
     var main = {
         init: function () {
+
+            $("body").delegate('.left_menu_shower', 'click', function () {
+                SmartBlocks.Blocks.AppDashboard.Main.showMenu();
+            });
         },
         launch_landing_page: function () {
 
