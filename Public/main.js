@@ -8,7 +8,7 @@ define([
         init: function () {
 
             $("body").delegate('.left_menu_shower', 'click', function () {
-                SmartBlocks.Blocks.AppDashboard.Main.showMenu();
+                SmartBlocks.Blocks.AppDashboard.Main.toggleMenu();
             });
         },
         launch_landing_page: function () {
