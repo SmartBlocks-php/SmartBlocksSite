@@ -2,7 +2,8 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    './apps/landing_page/views/landing_page'
+    './apps/landing_page/views/landing_page',
+    './resources/dist/js/bootstrap.min'
 ], function ($, _, Backbone, LandingPageView) {
     var main = {
         init: function () {
