@@ -1,0 +1,90 @@
+.landing_page {
+  height: 100%;
+  .header {
+    h1 {
+      font-size: inherit;
+      float: left;
+    }
+
+    .pure-menu {
+    }
+  }
+
+  .head_display {
+    text-align: center;
+    padding: 50px;
+    background: rgb(211, 239, 241);
+    h3 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .landing_page_content {
+    max-width: 1000px;
+    padding: 30px;
+
+    height: auto;
+    background: rgba(255, 255, 255, 0.5);
+    margin: auto;
+    margin-top: 10px;
+    > div > div {
+      padding: 15px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.4em;
+    }
+    .image_container {
+      text-align: center;
+    }
+  }
+
+  @import "../../libs/scrolldown/css/onepage-scroll.css";
+  @import "../../libs/scrolldown/css/style.css";
+  @import "../../libs/scrolldown/css/default.css";
+
+  section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    .page_container {
+      padding: 30px;
+      height: 100%;
+
+      h1.title {
+        font-size: 2.5em;
+      }
+    }
+
+  }
+
+  .page1 {
+
+    color: white;
+    background: #c4d1bf;
+    .page_container {
+      background: url(/SmartBlocksSite/resources/images/directions.png) -800px 0;
+      position: relative;
+
+      @media (min-width: 1300px) {
+        background: url(/SmartBlocksSite/resources/images/directions.png) -555px 0;
+        position: relative;
+        width: 1300px;
+        margin: auto;
+      }
+      @import "section1";
+
+    }
+
+  }
+
+}
+
+.page2 {
+  background: rgb(99, 140, 167);
+  color: white;
+  @import "section2";
+}

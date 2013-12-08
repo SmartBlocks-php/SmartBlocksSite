@@ -3,9 +3,10 @@ define([
     'underscore',
     'backbone',
     './apps/landing_page/views/landing_page',
+    './apps/landing_page2/views/landing_page',
     'text!./resources/templates/header_template.html',
     './resources/dist/js/bootstrap.min'
-], function ($, _, Backbone, LandingPageView, header_tpl) {
+], function ($, _, Backbone, LandingPageView,LandingPage2View, header_tpl) {
 
     //private methods
     var reset_header_selected = function () {
@@ -47,6 +48,13 @@ define([
         launch_landing_page: function () {
 
             var landing_page = new LandingPageView();
+            SmartBlocks.Methods.render(landing_page.$el);
+            landing_page.init();
+
+        },
+        launch_landing_page2: function () {
+
+            var landing_page = new LandingPage2View();
             SmartBlocks.Methods.render(landing_page.$el);
             landing_page.init();
 

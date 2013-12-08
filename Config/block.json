@@ -10,6 +10,13 @@
             "block_token": "SmartBlocksSite",
             "entry_point": "launch_landing_page",
             "menu_ignore": true
+        },
+        {
+            "name" : "LandingPage2",
+            "token": "LandingPage2",
+            "block_token": "SmartBlocksSite",
+            "entry_point": "launch_landing_page2",
+            "menu_ignore": true
         }
     ]
 }
