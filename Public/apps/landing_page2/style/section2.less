@@ -1,0 +1,112 @@
+
+.title {
+  animation: page_title_1rev 1s;
+  -webkit-animation: page_title_1rev 1s;
+  margin-bottom: 40px;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.explanation {
+  margin-bottom: 50px;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation: page_explain_1rev 1s;
+  -webkit-animation: page_explain_1rev 1s;
+}
+
+.vignet_container {
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation: page_vignets_1rev 1s;
+  -webkit-animation: page_vignets_1rev 1s;
+}
+
+@-webkit-keyframes page_vignets_1 {
+  0% {
+    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes page_vignets_1rev {
+  100% {
+    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+  }
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes page_title_1 {
+  0% {
+    transform: translateX(-500px);
+    -webkit-transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes page_title_1rev {
+  0% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-500px);
+    -webkit-transform: translateX(-500px);
+  }
+}
+
+@-webkit-keyframes page_explain_1 {
+  0% {
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+
+}
+
+@-webkit-keyframes page_explain_1rev {
+
+  0% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(500px);
+    -webkit-transform: translateX(500px);
+  }
+}
+
+&.visible {
+  .title {
+    animation: page_title_1 1s;
+    -webkit-animation: page_title_1 1s;
+  }
+
+  .explanation {
+
+    animation: page_explain_1 1s;
+    -webkit-animation: page_explain_1 1s;
+
+  }
+
+  .vignet_container {
+    animation: page_vignets_1 1s;
+    -webkit-animation: page_vignets_1 1s;
+  }
+}
+
+
