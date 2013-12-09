@@ -36,12 +36,27 @@
   margin: 10px;
   float: left;
   padding: 15px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
   text-align: left;
 }
+
 .whereto {
   margin: 10px;
   clear: both;
   padding: 15px;
-  background: rgba(255,255,255,0.3);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-height: 800px) {
+  .subsection {
+    width: ~"calc(33.3333% - 10px)";
+    height: 117px;
+    margin: 5px;
+    float: left;
+    padding: 5px;
+  }
+  .whereto {
+    margin: 5px;
+    padding: 5px;
+  }
 }

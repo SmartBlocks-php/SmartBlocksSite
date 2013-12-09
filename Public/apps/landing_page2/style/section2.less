@@ -20,6 +20,20 @@
   -webkit-animation-fill-mode: both;
   animation: page_vignets_1rev 1s;
   -webkit-animation: page_vignets_1rev 1s;
+
+}
+
+@media (max-height: 800px) {
+  .explanation {
+    margin-bottom: 5px;
+  }
+  .vignet_container {
+    .vignet {
+      margin: 5px;
+      width: ~"calc(50% - 10px)";
+      height: 350px;
+    }
+  }
 }
 
 @-webkit-keyframes page_vignets_1 {
