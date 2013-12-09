@@ -1,49 +1,4 @@
 
-.title {
-  animation: page_title_1rev 1s;
-  -webkit-animation: page_title_1rev 1s;
-  margin-bottom: 20px;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-}
-
-.explanation {
-  margin-bottom: 20px;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation: page_explain_1rev 1s;
-  -webkit-animation: page_explain_1rev 1s;
-}
-
-@media (max-height: 800px) {
-  .explanation {
-    margin-bottom: 5px;
-  }
-}
-
-.vignet_container {
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-  animation: page_vignets_1rev 1s;
-  -webkit-animation: page_vignets_1rev 1s;
-  width: 900px;
-  .vignet {
-    width: ~"calc(33.3333% - 60px)";
-  }
-  .vignet p {
-    color: white;
-  }
-}
-
-@media (max-height: 775px) {
-  .vignet_container {
-    .vignet {
-      margin: 5px;
-      width: ~"calc(33.3333% - 10px)";
-      height: 350px;
-    }
-  }
-}
 
 @-webkit-keyframes page_vignets_1 {
   0% {
@@ -132,6 +87,9 @@
   }
 }
 
+
+
+
 .positive {
   color: #add8e6;
 }
@@ -176,6 +134,7 @@
     bottom: 20px;
   }
 }
+
 
 @keyframes bounce {
   0% {

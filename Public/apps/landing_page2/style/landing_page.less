@@ -53,6 +53,7 @@
     overflow: hidden;
     height: 100%;
     .page_container {
+      color: white;
       text-align: center;
       position: relative;
       padding: 30px;
@@ -74,7 +75,7 @@
         height: 400px;
         background: rgba(255, 255, 255, 0.49);
         p {
-          color: gray;
+
           margin-top: 20px;
           font-size: 1.3em;
           text-align: center;
@@ -108,7 +109,7 @@
 
     @import "section0";
     .page_container {
-      background: no-repeat url(/SmartBlocksSite/resources/images/stacked_blocks.png) -100px ~"calc(100% + 100px)";
+      background: no-repeat url(/SmartBlocksSite/resources/images/stacked_blocks.png)  ~"calc(100% + 100px)" -100px;
       color: white;
 
     }
@@ -118,7 +119,7 @@
     color: white;
     background: #c4d1bf;
     .page_container {
-      background: no-repeat url(/SmartBlocksSite/resources/images/up_arrow.png) -50% 300%;
+      background: no-repeat url(/SmartBlocksSite/resources/images/up_arrow.png) -200px ~"calc(100% + 200px)";
       position: relative;
     }
 
@@ -153,11 +154,15 @@
   }
 
   .page3 {
+    background: rgb(107, 163, 191);
     @import "section3";
+    @import "animations";
   }
 
   .page4 {
+    background: rgb(142, 191, 185);
     @import "section4";
+    @import "animations";
   }
 
 }
